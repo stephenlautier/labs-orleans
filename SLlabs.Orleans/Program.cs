@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SLlabs.Orleans
+namespace SLlabs.Orleans.SiloHost
 {
 	class Program
 	{
