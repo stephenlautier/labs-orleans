@@ -6,4 +6,16 @@
     <RootNamespace>SLlabs.Orleans.SiloHost</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Orleans.Core" Version="2.0.0-preview*" />
+    <PackageReference Include="Microsoft.Orleans.OrleansCodeGenerator" Version="2.0.0-preview*" />
+    <PackageReference Include="Microsoft.Orleans.OrleansProviders" Version="2.0.0-preview*" />
+    <PackageReference Include="Microsoft.Orleans.OrleansRuntime" Version="2.0.0-preview*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SLlabs.Hero.Grains\SLlabs.Hero.Grains.csproj" />
+    <ProjectReference Include="..\SLlabs.Orleans.Hero.Interfaces\SLlabs.Hero.Interfaces.csproj" />
+  </ItemGroup>
+
 </Project>
