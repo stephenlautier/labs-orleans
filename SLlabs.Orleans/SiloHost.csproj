@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp1.1</TargetFramework>
-    <RootNamespace>SLlabs.Orleans.SiloHost</RootNamespace>
+    <RootNamespace>SLlabs.Silo</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
