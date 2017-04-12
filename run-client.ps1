@@ -1,0 +1,1 @@
+dotnet run -p ./SLlabs.ConsoleClient/SLlabs.ConsoleClient.csproj

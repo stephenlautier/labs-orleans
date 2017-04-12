@@ -7,7 +7,7 @@ namespace SLlabs.Player.Grains
 {
 	public class PlayerGrain : Grain, IPlayerGrain
 	{
-		public Task Say(string message)
+		public Task<string> Say(string message)
 		{
 			return Task.FromResult($"You said: '{message}'.");
 		}

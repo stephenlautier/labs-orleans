@@ -3,10 +3,10 @@ using Orleans;
 
 namespace SLlabs.Player.Interfaces
 {
-	public interface IPlayerGrain : IGrain
+	public interface IPlayerGrain : IGrainWithStringKey
 	{
 
-		Task Say(string message);
+		Task<string> Say(string message);
 
 		Task SetAlias(string alias);
 
