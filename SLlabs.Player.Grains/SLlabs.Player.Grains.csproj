@@ -7,6 +7,6 @@
     <PackageReference Include="Microsoft.Orleans.Core" Version="2.0.0-preview*" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SLlabs.Orleans.Hero.Interfaces\SLlabs.Player.Interfaces.csproj" />
+    <ProjectReference Include="..\SLlabs.Player.Interfaces\SLlabs.Player.Interfaces.csproj" />
   </ItemGroup>
 </Project>

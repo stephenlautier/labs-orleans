@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26403.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiloHost", "SLlabs.Orleans\SiloHost.csproj", "{D3C0ACA0-B3A8-4B50-8EF4-6AEA1D8226DB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiloHost", "SLlabs.SiloHost\SiloHost.csproj", "{D3C0ACA0-B3A8-4B50-8EF4-6AEA1D8226DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SLlabs.Player.Interfaces", "SLlabs.Orleans.Hero.Interfaces\SLlabs.Player.Interfaces.csproj", "{CE3C4036-FCB8-4464-81C7-192DFF5CBEFE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SLlabs.Player.Interfaces", "SLlabs.Player.Interfaces\SLlabs.Player.Interfaces.csproj", "{CE3C4036-FCB8-4464-81C7-192DFF5CBEFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SLlabs.Player.Grains", "SLlabs.Hero.Grains\SLlabs.Player.Grains.csproj", "{A559333B-1F64-45CD-BBC7-24A5E421A1B2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SLlabs.Player.Grains", "SLlabs.Player.Grains\SLlabs.Player.Grains.csproj", "{A559333B-1F64-45CD-BBC7-24A5E421A1B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

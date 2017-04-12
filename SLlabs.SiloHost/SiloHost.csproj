@@ -14,8 +14,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SLlabs.Hero.Grains\SLlabs.Player.Grains.csproj" />
-    <ProjectReference Include="..\SLlabs.Orleans.Hero.Interfaces\SLlabs.Player.Interfaces.csproj" />
+    <ProjectReference Include="..\SLlabs.Player.Grains\SLlabs.Player.Grains.csproj" />
+    <ProjectReference Include="..\SLlabs.Player.Interfaces\SLlabs.Player.Interfaces.csproj" />
   </ItemGroup>
 
 </Project>
