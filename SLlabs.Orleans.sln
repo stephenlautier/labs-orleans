@@ -9,6 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SLlabs.Player.Interfaces", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SLlabs.Player.Grains", "SLlabs.Player.Grains\SLlabs.Player.Grains.csproj", "{A559333B-1F64-45CD-BBC7-24A5E421A1B2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{F715589C-E22C-4165-B68A-969BB446AD46}"
+	ProjectSection(SolutionItems) = preProject
+		run-silo.ps1 = run-silo.ps1
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
