@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Orleans;
-using SLlabs.Hero.Interfaces;
+using SLlabs.Player.Interfaces;
 
-namespace SLlabs.Hero.Grains
+namespace SLlabs.Player.Grains
 {
 	public class PlayerGrain : Grain, IPlayerGrain
 	{

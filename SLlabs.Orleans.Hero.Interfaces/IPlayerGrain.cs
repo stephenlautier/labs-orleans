@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Orleans;
 
-namespace SLlabs.Hero.Interfaces
+namespace SLlabs.Player.Interfaces
 {
 	public interface IPlayerGrain : IGrain
 	{
