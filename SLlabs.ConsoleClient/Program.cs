@@ -39,6 +39,9 @@ namespace SLlabs.ConsoleClient
 			var player = GrainClient.GrainFactory.GetGrain<IPlayerGrain>("chiko");
 			var response = await player.Say("Yordle!");
 			Console.WriteLine("\n\n{0}\n\n", response);
+
+			Console.WriteLine("Please provide an alias...", response);
+			await player.SetAlias(Console.ReadLine());
 		}
 
 		private static void InitializeWithRetries(ClientConfiguration config, int initializeAttemptsBeforeFailing)
