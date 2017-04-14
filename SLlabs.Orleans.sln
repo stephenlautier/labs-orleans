@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26403.0
+VisualStudioVersion = 15.0.26403.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiloHost", "SLlabs.SiloHost\SiloHost.csproj", "{D3C0ACA0-B3A8-4B50-8EF4-6AEA1D8226DB}"
 EndProject
@@ -11,6 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SLlabs.Player.Grains", "SLl
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{F715589C-E22C-4165-B68A-969BB446AD46}"
 	ProjectSection(SolutionItems) = preProject
+		package.json = package.json
 		run-client.ps1 = run-client.ps1
 		run-silo.ps1 = run-silo.ps1
 	EndProjectSection
