@@ -43,6 +43,7 @@ namespace SLlabs.Web
 			loggerFactory.AddDebug();
 			orleansClient.Initialize();
 			app.UseMvc();
+			app.UseDeveloperExceptionPage();
 		}
 	}
 }

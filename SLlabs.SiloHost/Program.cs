@@ -23,7 +23,7 @@ namespace SLlabs.Silo
 		{
 			var config = ClusterConfiguration.LocalhostPrimarySilo();
 			config.AddMemoryStorageProvider();
-
+			config.AddAzureTableStorageProvider(connectionString: "UseDevelopmentStorage=true");
 			//config.Defaults.DefaultTraceLevel = Severity.Verbose3;
 
 			hostWrapper = new OrleansHostWrapper(config, args);

@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Orleans.Core" Version="2.0.0-preview*" />
+    <PackageReference Include="Microsoft.Orleans.OrleansAzureUtils" Version="2.0.0-preview2-201703021703" />
     <PackageReference Include="Microsoft.Orleans.OrleansCodeGenerator" Version="2.0.0-preview*" />
     <PackageReference Include="Microsoft.Orleans.OrleansProviders" Version="2.0.0-preview*" />
     <PackageReference Include="Microsoft.Orleans.OrleansRuntime" Version="2.0.0-preview*" />
