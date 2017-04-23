@@ -10,5 +10,6 @@ namespace SLlabs.Player.Interfaces
 
 		Task SetAlias(string alias);
 
+		Task<string> GetAlias();
 	}
 }

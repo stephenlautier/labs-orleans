@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  sllabs.web:
+    image: sllabs.web
+    build:
+      context: ./SLlabs.Web
+      dockerfile: Dockerfile

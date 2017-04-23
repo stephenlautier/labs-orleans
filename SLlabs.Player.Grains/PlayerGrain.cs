@@ -29,6 +29,11 @@ namespace SLlabs.Player.Grains
 			return Task.FromResult(result);
 		}
 
+		public Task<string> GetAlias()
+		{
+			return Task.FromResult(_alias);
+		}
+
 		public Task SetAlias(string alias)
 		{
 			_alias = alias;

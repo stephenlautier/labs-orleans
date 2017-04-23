@@ -1,22 +1,30 @@
-﻿using System;
-using System.Threading;
-using System.Threading.Tasks;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
-using Orleans;
+﻿using Orleans;
 using Orleans.Runtime;
 using Orleans.Runtime.Configuration;
-using SLlabs.Player.Interfaces;
+using System;
+using System.Threading;
+using Microsoft.Extensions.Options;
 
-namespace SLlabs.ConsoleClient
+namespace SLlabs.Web.Infrastructure
 {
-	class Program
+	public class OrleansClient
 	{
-		static int Main(string[] args)
+		private readonly IOptions<OrleansConfig> _config;
+
+		public OrleansClient(
+			IOptions<OrleansConfig> config
+		)
 		{
-			Console.WriteLine("Initializing Console Client...");
+			_config = config;
+		}
 
+		public int Initialize()
+		{
 			var config = ClientConfiguration.LocalhostSilo();
-
+			if (_config.Value.DeploymentId != null)
+			{
+				config.DeploymentId = _config.Value.DeploymentId;
+			}
 			try
 			{
 				InitializeWithRetries(config, initializeAttemptsBeforeFailing: 5);
@@ -27,21 +35,7 @@ namespace SLlabs.ConsoleClient
 				Console.ReadLine();
 				return 1;
 			}
-			DoClientWork().Wait();
-			Console.WriteLine("Press Enter to terminate...");
-			Console.ReadLine();
 			return 0;
-			
-		}
-
-		private static async Task DoClientWork()
-		{
-			var player = GrainClient.GrainFactory.GetGrain<IPlayerGrain>("chiko");
-			var response = await player.Say("Yordle!");
-			Console.WriteLine("\n\n{0}\n\n", response);
-
-			Console.WriteLine("Please provide an alias...", response);
-			await player.SetAlias(Console.ReadLine());
 		}
 
 		private static void InitializeWithRetries(ClientConfiguration config, int initializeAttemptsBeforeFailing)
@@ -50,6 +44,7 @@ namespace SLlabs.ConsoleClient
 			while (true)
 			{
 				try
+
 				{
 					GrainClient.Initialize(config);
 					Console.WriteLine("Client successfully connect to silo host");
@@ -62,6 +57,7 @@ namespace SLlabs.ConsoleClient
 					if (attempt > initializeAttemptsBeforeFailing) throw;
 					Thread.Sleep(TimeSpan.FromSeconds(2));
 				}
+
 			}
 		}
 	}
