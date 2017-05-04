@@ -7,7 +7,8 @@
   "devDependencies": {},
   "scripts": {
     "silo": "dotnet run -p ./SLlabs.SiloHost/SiloHost.csproj",
-    "client": "dotnet run -p ./SLlabs.ConsoleClient/SLlabs.ConsoleClient.csproj"
+    "client": "dotnet run -p ./SLlabs.ConsoleClient/SLlabs.ConsoleClient.csproj",
+    "web": "cd SLlabs.Web/ && dotnet run"
   },
   "repository": {
     "type": "git",
