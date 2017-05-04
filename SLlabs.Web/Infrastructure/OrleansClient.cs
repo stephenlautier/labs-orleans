@@ -53,9 +53,10 @@ namespace SLlabs.Web.Infrastructure
 				catch (SiloUnavailableException)
 				{
 					attempt++;
-					Console.WriteLine($"Attempt {attempt} of {initializeAttemptsBeforeFailing} failed to initialize the Orleans client.");
 					if (attempt > initializeAttemptsBeforeFailing) throw;
-					Thread.Sleep(TimeSpan.FromSeconds(2));
+					var delay = 2 * attempt;
+					Console.WriteLine($"Attempt {attempt} of {initializeAttemptsBeforeFailing} failed to initialize the Orleans client - retry within {delay} s.");
+					Thread.Sleep(TimeSpan.FromSeconds(delay));
 				}
 
 			}
