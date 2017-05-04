@@ -19,4 +19,10 @@
     <ProjectReference Include="..\SLlabs.Player.Interfaces\SLlabs.Player.Interfaces.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update=".dockerignore">
+      <DependentUpon>Dockerfile</DependentUpon>
+    </None>
+  </ItemGroup>
+
 </Project>
