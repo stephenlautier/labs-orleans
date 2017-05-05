@@ -1,7 +1,7 @@
-version: '2'
+version: "3"
 
 services:
-  sllabs.web:
+  web:
     image: sllabs.web:dev
     build:
       args:

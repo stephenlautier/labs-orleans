@@ -1,16 +1,27 @@
-version: '2'
+version: "3"
 
 services:
-  sllabs.web:
+  web:
     image: sllabs.web
+    #container_name: sllabs.web
     build:
       context: ./SLlabs.Web
       dockerfile: Dockerfile
     depends_on:
       - silohost
+    #links:
+    #  - silohost
+    networks:
+      - backend
 
   silohost:
     image: silohost
+    #container_name: silohost
     build:
       context: ./SLlabs.SiloHost
       dockerfile: Dockerfile
+    networks:
+      - backend
+
+networks:
+  backend:
