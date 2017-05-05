@@ -37,6 +37,8 @@ namespace SLlabs.Silo
 				if (!_siloHost.StartOrleansSilo())
 					throw new OrleansException($"Failed to start Orleans silo '{_siloHost.Name}' as a {_siloHost.Type} node.");
 				Console.WriteLine($"Successfully started Orleans silo '{_siloHost.Name}' as a {_siloHost.Type} node.");
+				Console.WriteLine("OrleansHost is running. Press [Ctrl]-C to stop...");
+				_siloHost.WaitForOrleansSiloShutdown();
 				return 0;
 			}
 			catch (Exception ex)

@@ -8,3 +8,4 @@
 [assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Performance", "U2U1105:Do not use string interpolation to concatenate strings", Justification = "<Pending>", Scope = "member", Target = "~M:SLlabs.Silo.OrleansHostWrapper.SiloArgs.PrintUsage")]
 [assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Performance", "U2U1105:Do not use string interpolation to concatenate strings", Justification = "<Pending>", Scope = "member", Target = "~M:SLlabs.Silo.OrleansHostWrapper.Stop~System.Int32")]
 
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Performance", "U2U1103:Index strings correctly", Justification = "<Pending>", Scope = "member", Target = "~M:SLlabs.Silo.OrleansHostWrapper.SiloArgs.ParseArguments(System.String[])~SLlabs.Silo.OrleansHostWrapper.SiloArgs")]

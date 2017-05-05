@@ -1,5 +1,5 @@
-﻿using System;
-using Orleans.Runtime.Configuration;
+﻿using Orleans.Runtime.Configuration;
+using System;
 
 namespace SLlabs.Silo
 {
@@ -11,8 +11,8 @@ namespace SLlabs.Silo
 		{
 			Console.WriteLine("Initializing Silo host...");
 			int exitCode = StartSilo(args);
-			Console.WriteLine("Press any key to terminate.");
-			Console.ReadLine();
+			//Console.WriteLine("Press any key to terminate.");
+			//Console.ReadLine();
 
 			exitCode += ShutdownSilo();
 
