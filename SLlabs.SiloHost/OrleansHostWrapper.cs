@@ -39,6 +39,7 @@ namespace SLlabs.Silo
 				Console.WriteLine($"Successfully started Orleans silo '{_siloHost.Name}' as a {_siloHost.Type} node.");
 				Console.WriteLine("OrleansHost is running. Press [Ctrl]-C to stop...");
 				_siloHost.WaitForOrleansSiloShutdown();
+				Console.WriteLine("OrleansHost stopped waiting, time to shut down!");
 				return 0;
 			}
 			catch (Exception ex)
